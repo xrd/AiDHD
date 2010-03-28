@@ -1,0 +1,9 @@
+.DS_Store
+db/*.sqlite3
+log/*.log
+tmp/**/*
+public/stylesheets/*.css
+config/database.yml
+public/stylesheets/stylesheet.css
+.#*
+*~

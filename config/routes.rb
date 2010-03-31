@@ -31,13 +31,19 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  map.root :controller => "questions"
+  map.root :controller => "inquiries"
 
   # See how all your routes lay out with "rake routes"
 
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
+
+  map.login '/login', :controller => 'rpx', :action => 'login'
+  map.logout '/logout', :controller => 'rpx', :action => 'logout'
+  map.login_rpx '/rpx_login', :controller => 'rpx', :action => 'login_return'
+  map.associate_rpx '/rpx_response', :controller => 'rpx', :action => 'rpx_response'
+
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end

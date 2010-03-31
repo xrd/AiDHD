@@ -38,4 +38,9 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+
+  API_KEY = '477e2365f8c2deaa1745d8a87e10f44af0795fda'
+  REALM = 'aidhd'
+  BASE_URL = 'https://rpxnow.com'
+  RPXNOW_URL = 'https://rpxnow.com/api/v2/auth_info'
 end

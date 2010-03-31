@@ -5,10 +5,16 @@ class InquiriesController < ApplicationController
   end
 
   def new
-    inquiry = Inquiry.new
+    @inquiry = Inquiry.new
   end
 
   def create
+    inquiry = params[:inquiry]
+    if @current_user.inquiries.create inquiry
+      redirect_to inquiries_path()
+    else
+      render :new
+    end
   end
 
 

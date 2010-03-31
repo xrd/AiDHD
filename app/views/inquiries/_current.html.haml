@@ -1,0 +1,5 @@
+- if @current_inquiries and ! @current_inquiries.empty?
+  %h2 Current inquiries
+  - @current_inquiries.each do |i|
+    = i.name
+      

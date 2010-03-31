@@ -5,6 +5,7 @@ require 'net/https'
 class RpxController < ApplicationController
 
   skip_before_filter :authenticate
+  protect_from_forgery :except => :login_return
 
   def login_return
     u = URI.parse(RPXNOW_URL)

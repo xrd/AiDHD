@@ -2,6 +2,7 @@
 %html
   %head
     %title Hi
+    = stylesheet_link_tag 'aidhd', 'mint'
     = javascript_include_tag 'aidhd.js'
 
     :javascript
@@ -17,12 +18,14 @@
     :javascript
       // Load jQuery
       google.load("jquery", "1.4.2");
+      google.load("jqueryui", "1.8");
       
       google.setOnLoadCallback(function() {
-      
+      aidhd.init();
       });
 
-    %a{ :class => "rpxnow", :onclick => "return false;", :href => "https://aidhd.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Faidhd.com%2Frpx_login" }
-      Sign In
-
-    = yield
+    .center
+      - unless @current_user
+        = render :partial => 'layouts/login'
+      - else
+        = yield

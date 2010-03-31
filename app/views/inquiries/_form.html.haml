@@ -1,0 +1,30 @@
+- form_for @inquiry do |f|
+  .item
+    Title: 
+    .input= f.text_field :title
+  .item
+    .input.new_question= link_to 'Add a question'
+  .item
+    .questions
+  .item
+    .input= f.submit 'Save Questions'
+
+  .hidden
+    .question
+      - f.fields_for :questions do |q|
+        .item
+          The Question
+          .input= q.text_field :title
+        .item
+          Question Type
+          .input
+            .radio
+              Yes/No (+followups)
+              = q.radio_button :type, 'yes/no'
+            .radio
+              Open Question
+              = q.radio_button :type, 'open'
+            
+
+    
+

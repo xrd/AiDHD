@@ -1,0 +1,13 @@
+%h1= @inquiry.title
+%h3 Questions:
+- form_for @inquiry do |f|
+  - fields_for :questions do |ff|
+    - @inquiry.questions.each do |q|
+      .question
+        %h3= q.title
+      .type
+        - if 'binary' == q.qtype
+          %h4= ff.radio_button :qtype, [ 'Yes', 'No' ]
+        - else 
+          %h4= ff.text_field :qtype
+    = f.submit "Submit your answers"

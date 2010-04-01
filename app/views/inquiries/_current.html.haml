@@ -1,5 +1,7 @@
 - if @current_inquiries and ! @current_inquiries.empty?
   %h2 Current inquiries
   - @current_inquiries.each do |i|
-    = i.name
+    .inquiry
+      = link_to i.title, inquiry_path(i)
+      = link_to 'x', inquiry_path(i), { :class => 'delete' }
       

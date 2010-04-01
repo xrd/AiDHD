@@ -1,11 +1,12 @@
 - form_for @inquiry do |f|
   .item
     Title: 
-    .input= f.text_field :title
-  .item
-    .input.new_question= link_to 'Add a question'
+    %br
+    .input.title= f.text_field :title
   .item
     .questions
+  .item
+    .input.new_question= link_to 'Add question'
   .item
     .input= f.submit 'Save Questions'
 
@@ -18,12 +19,12 @@
         .item
           Question Type
           .input
-            .radio
-              Yes/No (+followups)
-              = q.radio_button :type, 'yes/no'
-            .radio
-              Open Question
-              = q.radio_button :type, 'open'
+            = q.select :qtype, { :binary => 'Yes/No (plus followups)', :open => 'Open Question', :choice_single => 'Single Choice', :choice_multiple => 'Multiple Choice' }.invert, :include_blank => true
+        .extras
+          .choice.hidden
+            = q.text_field :choices
+            %br
+            = link_to 'Add another choice', :class => 'add_choice'
             
 
     

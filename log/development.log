@@ -1,0 +1,667 @@
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:47:26) [GET]
+
+ActionView::MissingTemplate (Missing template questions/index.erb in view path app/views):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:47:27) [GET]
+
+ActionView::MissingTemplate (Missing template questions/index.erb in view path app/views):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:47:41) [GET]
+Rendering questions/index
+Completed in 45ms (View: 44, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:48:15) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:48:16) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:48:26) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:48:27) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:48:50) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:49:31) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:49:32) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:50:00) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:50:12) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:50:12) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-27 23:50:25) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-03-28 00:07:20) [GET]
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-28 13:47:50) [GET]
+
+NameError (uninitialized constant InquiriesController):
+  
+
+Rendered rescues/_trace (25.4ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-29 22:27:35) [GET]
+
+NameError (uninitialized constant InquiriesController):
+  
+
+Rendered rescues/_trace (3032.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-30 20:08:31) [GET]
+
+NameError (uninitialized constant InquiriesController):
+  
+
+Rendered rescues/_trace (25.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateQuestions (20100328063639)
+Migrating to CreateInquiries (20100328175338)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "inquiries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "access" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100328175338')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("inquiries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("questions")[0m
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:09:03) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:09:31) [GET]
+
+ActionView::MissingTemplate (Missing template inquiries/index.erb in view path app/views):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:09:53) [GET]
+Rendering template within layouts/application
+Rendering inquiries/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:09:56) [GET]
+Rendering template within layouts/application
+Rendering inquiries/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:12:07) [GET]
+Rendering template within layouts/application
+Rendering inquiries/index
+
+ActionView::TemplateError (Missing template inquiries/_current.erb in view path app/views) on line #1 of app/views/inquiries/index.html.haml:
+1: = render :partial => 'inquiries/current'
+2: = render :partial => 'inquiries/new'
+
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.20) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/inquiries/index.html.haml:1:in `_run_haml_app47views47inquiries47index46html46haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateQuestions (20100328063639)
+Migrating to CreateInquiries (20100328175338)
+Migrating to AddUserAndVariables (20100330004740)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE TABLE "variables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "text" varchar(255)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100330004740')[0m
+Migrating to AddRpxToUsers (20100401065826)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mALTER TABLE "users" ADD "identifier" varchar(255)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mALTER TABLE "users" ADD "username" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mALTER TABLE "users" ADD "nickname" varchar(255)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mALTER TABLE "users" ADD "photo" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100401065826')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_list("inquiries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("questions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("variables")[0m
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:20:59) [GET]
+Rendering /dashboard/invalid
+
+ActionView::MissingTemplate (Missing template /dashboard/invalid.erb in view path app/views):
+  haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+  app/controllers/application_controller.rb:49:in `rpx_setup'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:21:41) [GET]
+Rendering /layouts/invalid
+Filter chain halted as [:rpx_setup] rendered_or_redirected.
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:21:42) [GET]
+Rendering /layouts/invalid
+Filter chain halted as [:rpx_setup] rendered_or_redirected.
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:21:49) [GET]
+Rendering template within layouts/application
+Rendering /layouts/invalid
+Filter chain halted as [:rpx_setup] rendered_or_redirected.
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:21:50) [GET]
+Rendering template within layouts/application
+Rendering /layouts/invalid
+Filter chain halted as [:rpx_setup] rendered_or_redirected.
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:27:52) [GET]
+Rendering template within layouts/application
+Rendering /layouts/invalid
+Filter chain halted as [:rpx_setup] rendered_or_redirected.
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:28:05) [GET]
+Redirected to http://localhost:5050/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing RpxController#login (for 127.0.0.1 at 2010-03-30 20:28:05) [GET]
+
+ActionView::MissingTemplate (Missing template rpx/login.erb in view path app/views):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-30 20:28:25) [GET]
+Redirected to http://localhost:5050/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing RpxController#login (for 127.0.0.1 at 2010-03-30 20:28:25) [GET]
+Rendering template within layouts/application
+Rendering rpx/login
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-31 00:24:11) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+Redirected to http://localhost:4040/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 23ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing RpxController#login (for 127.0.0.1 at 2010-03-31 00:24:11) [GET]
+Rendering template within layouts/application
+Rendering rpx/login
+Rendered layouts/_login (0.9ms)
+Completed in 83ms (View: 81, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing RpxController#login (for 127.0.0.1 at 2010-03-31 00:24:48) [GET]
+Rendering template within layouts/application
+Rendering rpx/login
+Rendered layouts/_login (0.8ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("photo", "nickname", "username", "identifier", "email") VALUES(NULL, NULL, 'xrd', NULL, NULL)[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing RpxController#login (for 127.0.0.1 at 2010-03-31 00:26:19) [GET]
+Rendering template within layouts/application
+Rendering rpx/login
+Rendered layouts/_login (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing RpxController#login (for 127.0.0.1 at 2010-03-31 00:26:27) [GET]
+Rendering template within layouts/application
+Rendering rpx/login
+Rendered layouts/_login (0.1ms)
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-31 00:26:32) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering inquiries/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: no such column: status: SELECT count(*) AS count_all FROM "inquiries" WHERE (((status = 'open') AND ("inquiries".user_id = 1)) AND ("inquiries".user_id = 1)) [0m
+
+ActionView::TemplateError (SQLite3::SQLException: no such column: status: SELECT count(*) AS count_all FROM "inquiries" WHERE (((status = 'open') AND ("inquiries".user_id = 1)) AND ("inquiries".user_id = 1)) ) on line #1 of app/views/inquiries/_current.html.haml:
+1: - if @current_inquiries and ! @current_inquiries.empty?
+2:   %h2 Current inquiries
+3:   - @current_inquiries.each do |i|
+4:     = i.name
+
+    app/views/inquiries/_current.html.haml:1:in `_run_haml_app47views47inquiries47_current46html46haml_locals_current_object'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.20) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/inquiries/index.html.haml:1:in `_run_haml_app47views47inquiries47index46html46haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (63.4ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateQuestions (20100328063639)
+Migrating to CreateInquiries (20100328175338)
+Migrating to AddUserAndVariables (20100330004740)
+Migrating to AddRpxToUsers (20100401034246)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: duplicate column name: identifier: ALTER TABLE "users" ADD "identifier" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateQuestions (20100328063639)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "title" varchar(255), "caption" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100328063639')[0m
+Migrating to CreateInquiries (20100328175338)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "inquiries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "access" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100328175338')[0m
+Migrating to AddUserAndVariables (20100330004740)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE TABLE "variables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "text" varchar(255)) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100330004740')[0m
+Migrating to AddRpxToUsers (20100401034246)
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "users" ADD "identifier" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mALTER TABLE "users" ADD "username" varchar(255)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mALTER TABLE "users" ADD "nickname" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mALTER TABLE "users" ADD "photo" varchar(255)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401034246')[0m
+Migrating to AddStatusToInquiries (20100401065826)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mALTER TABLE "inquiries" ADD "status" varchar(255)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401065826')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("inquiries")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("questions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("variables")[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("photo", "nickname", "username", "identifier", "email") VALUES(NULL, NULL, 'xrd', NULL, NULL)[0m
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-31 00:27:03) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering inquiries/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "inquiries" WHERE (((status = 'open') AND ("inquiries".user_id = 1)) AND ("inquiries".user_id = 1)) [0m
+Rendered inquiries/_current (2.0ms)
+Rendered inquiries/_new (0.8ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing InquiriesController#new (for 127.0.0.1 at 2010-03-31 00:27:06) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+Rendering template within layouts/application
+Rendering inquiries/new
+Rendered inquiries/_form (30.4ms)
+Completed in 46ms (View: 39, DB: 0) | 200 OK [http://localhost/inquiries/new]
+
+
+Processing InquiriesController#create (for 127.0.0.1 at 2010-03-31 00:27:59) [POST]
+  Parameters: {"inquiry"=>{"questions"=>{"title"=>"", "type"=>"yes/no"}, "title"=>"lkjalsdkjalkdjalksd"}, "commit"=>"Save Questions", "authenticity_token"=>"0ok/csuybOgCc2OxQAXMRYb0jIDAP+7207k0VsOfoYI="}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+ActiveRecord::AssociationTypeMismatch (Question(#2175802140) expected, got Array(#2148226700)):
+  app/controllers/inquiries_controller.rb:14:in `create'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#create (for 127.0.0.1 at 2010-03-31 00:46:08) [POST]
+  Parameters: {"inquiry"=>{"questions"=>{"title"=>"", "type"=>"yes/no"}, "title"=>"lkjalsdkjalkdjalksd"}, "commit"=>"Save Questions", "authenticity_token"=>"0ok/csuybOgCc2OxQAXMRYb0jIDAP+7207k0VsOfoYI="}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+ActiveRecord::AssociationTypeMismatch (Question(#2175985560) expected, got Array(#2148226700)):
+  app/controllers/inquiries_controller.rb:14:in `create'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (47.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#create (for 127.0.0.1 at 2010-03-31 00:57:17) [POST]
+  Parameters: {"inquiry"=>{"questions"=>{"title"=>"", "type"=>"yes/no"}, "title"=>"lkjalsdkjalkdjalksd"}, "commit"=>"Save Questions", "authenticity_token"=>"0ok/csuybOgCc2OxQAXMRYb0jIDAP+7207k0VsOfoYI="}
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `accept_nested_attributes_for' for #<Class:0x1031688d0>):
+  app/models/inquiry.rb:6
+  app/controllers/inquiries_controller.rb:14:in `create'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (115.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#create (for 127.0.0.1 at 2010-03-31 00:58:46) [POST]
+  Parameters: {"inquiry"=>{"questions"=>{"title"=>"", "type"=>"yes/no"}, "title"=>"lkjalsdkjalkdjalksd"}, "commit"=>"Save Questions", "authenticity_token"=>"0ok/csuybOgCc2OxQAXMRYb0jIDAP+7207k0VsOfoYI="}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `accept_nested_attributes_for' for #<Class:0x1036c58f0>):
+  app/models/inquiry.rb:6
+  app/controllers/inquiries_controller.rb:14:in `create'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (52.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-31 00:58:58) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `accept_nested_attributes_for' for #<Class:0x103139378>):
+  app/models/inquiry.rb:6
+  app/controllers/inquiries_controller.rb:24:in `load_current_inquiries'
+  app/controllers/inquiries_controller.rb:4:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (49.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-31 00:59:00) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `accept_nested_attributes_for' for #<Class:0x103231028>):
+  app/models/inquiry.rb:6
+  app/controllers/inquiries_controller.rb:24:in `load_current_inquiries'
+  app/controllers/inquiries_controller.rb:4:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (115.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-31 00:59:27) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `accept_nested_attributes_for' for #<Class:0x10342ae38>):
+  app/models/inquiry.rb:5
+  app/controllers/inquiries_controller.rb:24:in `load_current_inquiries'
+  app/controllers/inquiries_controller.rb:4:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-31 00:59:29) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `accept_nested_attributes_for' for #<Class:0x1035e26b8>):
+  app/models/inquiry.rb:5
+  app/controllers/inquiries_controller.rb:24:in `load_current_inquiries'
+  app/controllers/inquiries_controller.rb:4:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (50.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InquiriesController#index (for 127.0.0.1 at 2010-03-31 01:00:22) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `accept_nested_attributes_for' for #<Class:0x103769680>):
+  app/models/inquiry.rb:5
+  app/controllers/inquiries_controller.rb:24:in `load_current_inquiries'
+  app/controllers/inquiries_controller.rb:4:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)

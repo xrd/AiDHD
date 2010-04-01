@@ -9,6 +9,7 @@ class InquiriesController < ApplicationController
   end
 
   def create
+    debugger
     inquiry = params[:inquiry]
     if @current_user.inquiries.create inquiry
       redirect_to inquiries_path()

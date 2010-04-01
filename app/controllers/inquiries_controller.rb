@@ -10,7 +10,11 @@ class InquiriesController < ApplicationController
 
   def create
     inquiry = params[:inquiry]
-    if @current_user.inquiries.create inquiry
+    questions = inquiry[:questions]
+    inquiry.delete( :questions )
+    if new_inquiry = @current_user.inquiries.create( inquiry )
+      # extract the items which have numeric keys
+      questions.keys.detect { |k| questions[k] =~ /\d+/  }.each { |k| new_inquiry.questions.create( questions[k] ) }
       redirect_to inquiries_path()
     else
       render :new

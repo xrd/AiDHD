@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100328063639) do
+ActiveRecord::Schema.define(:version => 20100401065826) do
+
+  create_table "inquiries", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.string   "access"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "status"
+  end
 
   create_table "questions", :force => true do |t|
     t.string   "type"
@@ -17,6 +26,20 @@ ActiveRecord::Schema.define(:version => 20100328063639) do
     t.text     "caption"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string "email"
+    t.string "identifier"
+    t.string "username"
+    t.string "nickname"
+    t.string "photo"
+  end
+
+  create_table "variables", :force => true do |t|
+    t.integer "user_id"
+    t.string  "name"
+    t.string  "text"
   end
 
 end

@@ -1,0 +1,54 @@
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (250.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (80.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateQuestions (20100328063639)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "title" varchar(255), "caption" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100328063639')[0m
+Migrating to CreateInquiries (20100328175338)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "inquiries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "access" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100328175338')[0m
+Migrating to AddUserAndVariables (20100330004740)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "variables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "text" varchar(255)) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100330004740')[0m
+Migrating to AddRpxToUsers (20100401034246)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "users" ADD "identifier" varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mALTER TABLE "users" ADD "username" varchar(255)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "users" ADD "nickname" varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mALTER TABLE "users" ADD "photo" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401034246')[0m
+Migrating to AddStatusToInquiries (20100401065826)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "inquiries" ADD "status" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401065826')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("inquiries")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("questions")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("variables")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "questions" [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "inquiries" [0m
+
+
+Processing InquiriesController#create (for 0.0.0.0 at 2010-03-31 23:42:40) [POST]
+  Parameters: {"inquiry"=>{"title"=>"Yo, this is cool!", "questions"=>{"title"=>"", "1270103251854"=>{"title"=>"I can live without this one.", "type"=>""}, "type"=>"", "1270103244644"=>{"title"=>"Another one, is here", "type"=>""}, "1270103231813"=>{"title"=>"I'm not sure if I liek this.", "type"=>"open"}, "1270103257009"=>{"title"=>"Yeah, but will they use it?", "type"=>""}}}, "commit"=>"Save Questions"}
+Redirected to http://test.host/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 10ms (DB: 2) | 302 Found [http://test.host/inquiries?commit=Save+Questions&inquiry%5Bquestions%5D%5B1270103231813%5D%5Btitle%5D=I%27m+not+sure+if+I+liek+this.&inquiry%5Bquestions%5D%5B1270103231813%5D%5Btype%5D=open&inquiry%5Bquestions%5D%5B1270103244644%5D%5Btitle%5D=Another+one%2C+is+here&inquiry%5Bquestions%5D%5B1270103244644%5D%5Btype%5D=&inquiry%5Bquestions%5D%5B1270103251854%5D%5Btitle%5D=I+can+live+without+this+one.&inquiry%5Bquestions%5D%5B1270103251854%5D%5Btype%5D=&inquiry%5Bquestions%5D%5B1270103257009%5D%5Btitle%5D=Yeah%2C+but+will+they+use+it%3F&inquiry%5Bquestions%5D%5B1270103257009%5D%5Btype%5D=&inquiry%5Bquestions%5D%5Btitle%5D=&inquiry%5Bquestions%5D%5Btype%5D=&inquiry%5Btitle%5D=Yo%2C+this+is+cool%21]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "inquiries" [0m

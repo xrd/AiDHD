@@ -3,7 +3,7 @@ var aidhd = {
     $('.new_question').click( aidhd.add_new_question );
     $(':input[name*=type]').live( 'change', aidhd.adjust_question_type );
     $('a.delete').click( aidhd.handle_delete );      
-    $('a.add_choice').click( aidhd.add_choice );      
+    $('a.add_choice').live('click', aidhd.add_choice );      
   },
 
   handle_delete : function( event ) {
@@ -14,7 +14,10 @@ var aidhd = {
   },
 
     add_choice : function( event ) {
-        
+        var new_choice = $('.extras .choice:first').clone();
+        $('.extras .choice:last').insertAfter( new_choice );
+        $(new_choice).show();
+        event.preventDefault();
     },
 
   adjust_question_type : function( event ) {

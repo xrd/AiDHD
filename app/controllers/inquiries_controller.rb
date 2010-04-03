@@ -19,14 +19,15 @@ class InquiriesController < ApplicationController
   end
 
   def create
-    debugger
     inquiry = params[:inquiry]
     questions = inquiry[:questions]
+    puts "Questions: #{questions.inspect}"
     inquiry.delete( :questions )
     if new_inquiry = @current_user.inquiries.create( inquiry )
       # extract the items which have numeric keys
       questions.keys.each do |key|
         if key =~ /\d+/
+          puts "Question: #{questions[key]}"
           new_inquiry.questions.create( questions[key] )
         end
       end
